@@ -11,32 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141002053205) do
-
-  create_table "conferences", force: true do |t|
-    t.string   "name"
-    t.string   "location"
-    t.date     "date"
-    t.time     "start_time"
-    t.time     "end_time"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "leads", force: true do |t|
-    t.string   "lead_id"
-    t.string   "lead_first_name"
-    t.string   "lead_last_name"
-    t.integer  "conference_id"
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(version: 20141015060241) do
 
   create_table "users", force: true do |t|
-    t.string   "username"
-    t.string   "password_salt"
-    t.string   "password_hash"
+    t.string   "name"
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"

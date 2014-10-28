@@ -1,3 +1,4 @@
+#!/usr/bin/ruby
 words = ["happy","Birth", "Day", "<3"]
 counter = 0
 puts "   * * *   * * *"
